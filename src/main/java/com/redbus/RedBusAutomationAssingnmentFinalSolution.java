@@ -29,7 +29,7 @@ public class RedBusAutomationAssingnmentFinalSolution {
 		sourceButton.click();
 
 		By searchSuggestionSectionLocator = By.xpath("//div[contains(@class,\"searchSuggestionWrapper\")]");
-		wait.until(ExpectedConditions.invisibilityOfElementLocated(searchSuggestionSectionLocator));
+		wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(searchSuggestionSectionLocator));
 		selectLocation(wd, wait, "Mumbai"); // From location
 		selectLocation(wd, wait, "Pune"); // To location
 
